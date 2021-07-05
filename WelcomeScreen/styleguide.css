@@ -1,0 +1,22 @@
+:root {
+  --black: #000000;
+  --dove-gray: #707070;
+  --white: #ffffff;
+
+  --font-size-l: 88px;
+  --font-size-m: 65px;
+  --font-size-s: 20px;
+
+  --font-family-calibri-light: "Calibri-Light", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+}
+.segoeui-regular-normal-dove-gray-20px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+.border-1px-dove-gray {
+  border: 1px solid var(--dove-gray);
+}
