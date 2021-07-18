@@ -78,7 +78,8 @@ export default function Dashboard({ code }) {
                     <TrackSearch track={ track } key={ track.uri} chooseTrack={chooseTrack}/>
                 ))}
             </div>
-            <div>
+            
+            <div style={{ position: "fixed", bottom: 0, width: "100%", left: 0}}>
                 <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
             </div>
         </Container>
