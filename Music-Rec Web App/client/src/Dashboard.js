@@ -7,7 +7,7 @@ import Player from './Player'
 
 //creating an API with Spotify's API
 const spotifyApi = new SpotifyWebApi({
-    clientId: "bf0bb939e1c341428995c2f7e589f077"
+    clientId: "73f2fc893d5e420c8abe31fe1f9a3696"
 })
 
 export default function Dashboard({ code }) {
