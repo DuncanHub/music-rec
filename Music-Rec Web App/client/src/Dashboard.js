@@ -22,12 +22,7 @@ export default function Dashboard({ code }) {
     }
 
     //If the accessToken changes, make sure to assign it to our API once again so we can use it
-    useEffect(() => {
-        if (!accessToken)
-            return
 
-        spotifyApi.setAccessToken(accessToken)
-    }, [accessToken])
 
     //Searching
     useEffect(() => {
@@ -61,6 +56,13 @@ export default function Dashboard({ code }) {
 
         return () => cancel = true 
     }, [search, accessToken])
+
+    useEffect(() => {
+        if (!accessToken)
+            return
+
+        spotifyApi.setAccessToken(accessToken)
+    }, [accessToken])
 
     //Search Bar, song section, and tracks' images
     return (
