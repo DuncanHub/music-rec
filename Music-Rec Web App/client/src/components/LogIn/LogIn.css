@@ -1,0 +1,164 @@
+.log-in {
+  align-items: flex-start;
+  background-color: #7300a2;
+  display: flex;
+  height: 768px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1366px;
+}
+
+.overlap-group-5 {
+  align-items: flex-start;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 856px;
+  justify-content: flex-end;
+  min-width: 1844px;
+  padding: 81px 301px;
+}
+
+.flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 608px;
+  width: 590px;
+}
+
+.overlap-group1-2 {
+  height: 169px;
+  position: relative;
+  width: 480px;
+}
+
+.log-inname {
+  background-color: var(--valentino);
+  height: 145px;
+  left: 95px;
+  position: absolute;
+  top: 24px;
+  width: 382px;
+}
+
+.log-in-1 {
+  height: 155px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 480px;
+}
+
+.overlap-group4 {
+  align-items: flex-start;
+  background-color: var(--mardi-gras);
+  display: flex;
+  height: 94px;
+  margin-left: 3px;
+  margin-top: 40px;
+  min-width: 587px;
+  padding: 15px 20px;
+}
+
+.username-1 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 55px;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 493px;
+}
+
+.username-1::placeholder {
+  color: #70707099;
+}
+
+.overlap-group2-3 {
+  align-items: flex-end;
+  background-color: var(--mardi-gras);
+  display: flex;
+  height: 94px;
+  margin-left: 3px;
+  margin-top: 40px;
+  min-width: 587px;
+  padding: 19px 20px;
+}
+
+.password-1 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 55px;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 509px;
+}
+
+.password-1::placeholder {
+  color: #70707099;
+}
+
+.new-sign-in-here {
+  align-self: center;
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-family-century_gothic);
+  font-size: var(--font-size-m);
+  letter-spacing: 0;
+  line-height: 45px;
+  margin-left: 5.0px;
+  margin-top: 115px;
+  min-height: 56px;
+  min-width: 403px;
+  white-space: nowrap;
+}
+
+.span1 {
+  text-decoration: underline;
+}
+
+.overlap-group3-1 {
+  align-self: flex-end;
+  height: 100px;
+  margin-bottom: 65px;
+  margin-left: 79px;
+  position: relative;
+  width: 270px;
+}
+
+.log-in-button {
+  background-color: var(--valentino);
+  cursor: pointer;
+  height: 100px;
+  left: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 270px;
+}
+
+.log-in-button:hover {
+  transform: scale(0.9); 
+}
+
+.log-in-2 {
+  left: 69px;
+  letter-spacing: 0;
+  line-height: 45px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,152 @@
+.signup {
+  align-items: flex-start;
+  background-color: #6f1e9c;
+  display: flex;
+  height: 768px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1366px;
+}
+
+.overlap-group-4 {
+  align-items: flex-start;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 856px;
+  justify-content: flex-end;
+  min-width: 1844px;
+  padding: 87px 301px;
+}
+
+.flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 565px;
+  width: 587px;
+}
+
+.overlap-group5 {
+  height: 163px;
+  margin-left: 16.0px;
+  position: relative;
+  width: 465px;
+}
+
+.signup-box {
+  background-color: var(--violet);
+  height: 145px;
+  left: 3px;
+  position: absolute;
+  top: 18px;
+  width: 462px;
+}
+
+.sign-up {
+  height: 155px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 463px;
+}
+
+.overlap-group-3 {
+  align-items: flex-end;
+  background-color: var(--mardi-gras);
+  display: flex;
+  height: 94px;
+  margin-top: 40px;
+  min-width: 587px;
+  padding: 19px 26px;
+}
+
+.username {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 55px;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 514px;
+}
+
+.username::placeholder {
+  color: #70707099;
+}
+
+.password {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 55px;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 509px;
+}
+
+.password::placeholder {
+  color: #70707099;
+}
+
+.re-type-password {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 55px;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 528px;
+}
+
+.re-type-password::placeholder {
+  color: #70707099;
+}
+
+.overlap-group2-2 {
+  align-self: flex-end;
+  height: 100px;
+  margin-bottom: 59px;
+  margin-left: 79px;
+  position: relative;
+  width: 270px;
+}
+
+.sign-up-button {
+  background-color: var(--violet);
+  cursor: pointer;
+  height: 100px;
+  left: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 270px;
+}
+
+.sign-up-button:hover {
+  transform: scale(0.9); 
+}
+
+.sign-up-1 {
+  left: 53px;
+  letter-spacing: 0;
+  line-height: 45px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+
