@@ -1,0 +1,55 @@
+:root { 
+  --dove-gray: #707070;
+  --ebb: #eee3e3;
+  --electric-violet: #8800c1;
+  --fair-pink: #ffefef;
+  --mardi-gras: #300044;
+  --mardi-gras-2: #300044ed;
+  --romance: #fffcfc;
+  --valentino: #33093f;
+  --violet: #2d0c3f;
+  --white: #ffffff;
+ 
+  --font-size-l: 55px;
+  --font-size-m: 45px;
+  --font-size-s: 40px;
+ 
+  --font-family-century_gothic: "Century Gothic", Helvetica;
+  --font-family-centurygothic-regular: "CenturyGothic-Regular", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+}
+.segoeui-regular-normal-dove-gray-40px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.centurygothic-regular-normal-white-45px {
+  color: var(--white);
+  font-family: var(--font-family-centurygothic-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.centurygothic-regular-normal-white-55px {
+  color: var(--white);
+  font-family: var(--font-family-centurygothic-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1px-romance {
+  border: 1px solid var(--romance);
+}
+
+.border-1px-ebb {
+  border: 1px solid var(--ebb);
+}
+
+.border-1px-fair-pink {
+  border: 1px solid var(--fair-pink);
+}

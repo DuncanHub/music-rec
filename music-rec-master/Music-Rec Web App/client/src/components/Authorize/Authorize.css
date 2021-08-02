@@ -1,0 +1,78 @@
+.authorize {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  display: flex;
+  height: 763px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1366px;
+}
+
+.overlap-group-1 {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 856px;
+  padding: 110px 506px;
+  width: 1844px;
+}
+
+.overlap-group2-1 {
+  height: 166px;
+  position: relative;
+  width: 814px;
+}
+
+.log-in-name {
+  background-color: var(--mardi-gras);
+  height: 163px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 807px;
+}
+
+.spotify-log-in {
+  height: 155px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 11px;
+  width: 814px;
+}
+
+.overlap-group1-1 {
+  align-self: center;
+  height: 95px;
+  margin-left: 1.0px;
+  margin-top: 116px;
+  position: relative;
+  width: 281px;
+}
+
+.authorize-button {
+  background-color: var(--mardi-gras-2);
+  height: 95px;
+  left: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 281px;
+}
+
+.authorize-button:hover {
+  transform: scale(0.9); 
+}
+
+.authorize-1 {
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+}
+

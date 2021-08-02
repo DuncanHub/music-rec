@@ -1,0 +1,96 @@
+.welcome {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  display: flex;
+  height: 763px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1366px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 856px;
+  padding: 110px 611px;
+  width: 1844px;
+}
+
+.overlap-group1 {
+  align-self: flex-start;
+  height: 162px;
+  position: relative;
+  width: 594px;
+}
+
+.welcome2 {
+  background-color: var(--mardi-gras);
+  height: 144px;
+  left: 4px;
+  position: absolute;
+  top: 0;
+  width: 587px;
+}
+
+.welcome-1 {
+  height: 155px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 594px;
+}
+
+.overlap-group2 {
+  height: 95px;
+  margin-left: 1.0px;
+  margin-top: 217px;
+  position: relative;
+  width: 281px;
+}
+
+.link {
+  background-color: var(--mardi-gras-2);
+  cursor: pointer;
+  height: 95px;
+  left: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 281px;
+}
+
+.link:hover {
+  transform: scale(0.9); 
+}
+
+.title {
+  left: 57px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.overlap-group3 {
+  height: 95px;
+  margin-left: 1.0px;
+  margin-top: 29px;
+  position: relative;
+  width: 281px;
+}
+
+.place {
+  left: 32px;
+  letter-spacing: 0;
+  line-height: 55px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+}
+

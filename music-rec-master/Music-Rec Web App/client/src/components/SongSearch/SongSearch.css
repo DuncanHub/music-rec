@@ -1,0 +1,36 @@
+.songsearch {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  display: flex;
+  height: 763px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1366px;
+}
+
+.overlap-group-2 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 856px;
+  position: relative;
+  width: 1844px;
+}
+
+.songsearch-box {
+  background-color: var(--mardi-gras);
+  height: 163px;
+  left: 538px;
+  position: absolute;
+  top: 110px;
+  width: 774px;
+}
+
+.song-search {
+  height: 155px;
+  left: 546px;
+  object-fit: cover;
+  position: absolute;
+  top: 121px;
+  width: 769px;
+}
+
