@@ -3,8 +3,7 @@
 
     $username= "";
     $email= "";
-    $password_1 = $_POST ["password_1"]; //something is wrong with this idk
-    $password_2 = $_POST ["password_2"];
+    
     $errors=array();
 
         //connect to database
@@ -29,11 +28,6 @@
     if (empty($password_1)){
         array_push($errors, "Password is required");
     }
-    if ($password_1 != $password_2) {
-        array_push($errors, "The two passwords do not match");
-    }
-
-
 
     
     //no errors? save user to database
@@ -46,5 +40,12 @@
         $_SESSION['username']= $username;
         $_SESSION['success']= "You are now logged in";
         header('location: index.php'); //goes to homepage
+    }
+
+    //logout
+    if (isset($_GET['logout'])){
+        session_destroy();
+        unset($_SESSION['username']);
+        header('location: login.php');
     }
 ?>
