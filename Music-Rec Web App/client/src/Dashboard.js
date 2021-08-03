@@ -4,6 +4,8 @@ import { Container, Form } from 'react-bootstrap'
 import SpotifyWebApi from 'spotify-web-api-node'
 import TrackSearch from './TrackSearch'
 import Player from './Player'
+import Article from './Article'
+import '../src/style.css'
 
 //creating an API with Spotify's API
 const spotifyApi = new SpotifyWebApi({
@@ -15,6 +17,8 @@ export default function Dashboard({ code }) {
     const [search, setSearch] = useState("")
     const [searchResults, setSearchResults] = useState([])
     const [playingTrack, setplayingTrack] = useState()
+    const [articles, setArticles] = useState([])
+    const [subreddit, setSubreddit] = useState('MUSIC')
 
     function chooseTrack(track) {
         setplayingTrack(track)
@@ -62,9 +66,23 @@ export default function Dashboard({ code }) {
         return () => cancel = true 
     }, [search, accessToken])
 
+    useEffect(() => {
+        fetch("https://www.reddit.com/r/" + subreddit + ".json").then(res => {
+            if (res.status != 200) {
+                return
+            }
+
+            res.json().then(data => {
+                if (data != null) {
+                    setArticles(data.data.children)
+                }
+            })
+        })
+    }, [subreddit])
+
     //Search Bar, song section, and tracks' images
     return (
-        <Container className="d-flex flex-column py-2" style={{
+        <Container className="d-flex flex-column py-2 bg-dark" style={{
             heigth: "100vh"
         }}>
             <Form.Control 
@@ -80,6 +98,14 @@ export default function Dashboard({ code }) {
             </div>
             <div>
                 <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
+            </div>
+            <div >
+                <header>
+                    <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)} />
+                </header>
+                <div className="articles">
+                    {(articles != null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : ''}
+                </div>
             </div>
         </Container>
     )

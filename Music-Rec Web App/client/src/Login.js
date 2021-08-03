@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../src/style.css'
 import { Container } from 'react-bootstrap'
 
 //Requesting authorization for the user to login, includes: client_id, response_type, redirect_uri, scope, and state 
@@ -12,10 +12,17 @@ export default function Login() {
         <Container
             className="d-flex justify-content-center align-items-center"
             style={{ minHeight: "100vh" }}
+            
         >
-            <a className="btn btn-success btn-lg" href={AUTH_URL}>
+            <div>
+                <a className="btn btn-dark btn-lg " href={AUTH_URL}>
                 Login with Spotify
-            </a>
+                </a>
+           </div>
+            
+          
+            
+            
         </Container>
     )
 }

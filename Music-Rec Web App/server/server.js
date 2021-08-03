@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const SpotifyWebAPI = require('spotify-web-api-node')
@@ -11,9 +12,9 @@ app.post('/refresh', (req, res) => {
     //Getting the refreshToken 
     const refreshToken = req.body.refreshToken
     const spotifyApi = new SpotifyWebAPI({
-        redirectUri: 'http://localhost:3000',
-        clientId: '73f2fc893d5e420c8abe31fe1f9a3696',
-        clientSecret: '2b8419a7a9c24a7d803e1965c5d2f8d9',
+        redirectUri: process.env.REDIRECT_URI,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
         refreshToken
     })
 
@@ -36,9 +37,9 @@ app.post('/login', (req, res) => {
     const code = req.body.code
     const spotifyApi = new SpotifyWebAPI({
         //Passing all the credentials needed to the api
-        redirectUri: 'http://localhost:3000',
-        clientId: '73f2fc893d5e420c8abe31fe1f9a3696',
-        clientSecret: '2b8419a7a9c24a7d803e1965c5d2f8d9'
+        redirectUri: process.env.REDIRECT_URI,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
     })
 
     //Function that converts the code into a token, it also returns information about the token
