@@ -18,7 +18,7 @@ header {
 header input {
     display: inline-block;
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
@@ -32,10 +32,14 @@ header:before {
     content: '/r/';
     display: inline-block;
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
+}
+
+a h3{
+    font-size: 22px;
 }
 
 .articles article {
@@ -45,7 +49,7 @@ header:before {
 
 .articles article a {
     text-decoration: none;
-    color:#e6e3eb
+    color:#e6e3eb;
 }
 
 
